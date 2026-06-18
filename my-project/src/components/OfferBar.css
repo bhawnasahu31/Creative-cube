@@ -1,0 +1,39 @@
+.offer-wrapper{
+  width:100%;
+  height:240px;
+  overflow:hidden;
+}
+
+.offer-track{
+  display:flex;
+  transition:transform 0.8s ease-in-out;
+}
+
+.offer-slide{
+  min-width:100%;
+  height:240px;
+  display:flex;
+}
+
+/* LEFT IMAGE */
+.offer-left{
+  width:50%;
+  height:100%;
+  overflow:hidden;
+}
+
+/* RIGHT IMAGE */
+.offer-right{
+  width:50%;
+  height:100%;
+  overflow:hidden;
+}
+
+/* IMAGE FULL COVER */
+.offer-left img,
+.offer-right video,
+.offer-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;   /* full cover karega */
+}

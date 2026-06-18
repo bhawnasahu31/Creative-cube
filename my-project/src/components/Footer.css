@@ -1,0 +1,108 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 80px 6% 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* ===== LOGO ===== */
+.footer-logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: #1fa9a2;
+}
+
+/* ===== TEXT ===== */
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* ===== HEADINGS ===== */
+.footer-col h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* ===== LIST ===== */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-col ul li:hover {
+  color: #1fa9a2;
+  padding-left: 5px;
+}
+
+/* ===== CONTACT ICON ALIGNMENT ===== */
+.footer-col p svg {
+  margin-right: 8px;
+  color: #1fa9a2;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons svg {
+  margin-right: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #1fa9a2;
+  transform: translateY(-3px);
+}
+
+/* ===== BOTTOM ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 60px 8% 20px;
+  }
+}

@@ -1,0 +1,91 @@
+.bedroom-home {
+  padding: 50px 70px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.bedroom-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bedroom-hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.bedroom-hero p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* GRID */
+.bedroom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.bedroom-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: 0.4s;
+}
+
+.bedroom-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.bedroom-card:hover img {
+  transform: scale(1.1);
+}
+
+/* OVERLAY */
+.bedroom-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.1)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.bedroom-card-overlay h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bedroom-card-overlay button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  background: #1fa9a2;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bedroom-home {
+    padding: 30px 20px;
+  }
+
+  .bedroom-card img {
+    height: 220px;
+  }
+}

@@ -1,0 +1,248 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.cc-header {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* CONTAINER */
+.cc-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================= TOP BAR ================= */
+.cc-topbar {
+  background: #1fa9a2;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.cc-pincode {
+  display: flex;
+  gap: 6px;
+}
+
+.cc-pincode input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.cc-pincode button {
+  background: #0b3c49;
+  color: white;
+  border: none;
+  padding: 5px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ================= MAIN HEADER ================= */
+.cc-main {
+  padding: 20px 0;
+}
+
+.cc-logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.cc-logo span {
+  color: #1fa9a2;
+}
+
+.cc-logo p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* SEARCH */
+.cc-search {
+  flex: 1;
+  max-width: 520px;
+  position: relative;
+  margin: 0 30px;
+}
+
+.cc-search input {
+  width: 100%;
+  padding: 12px 42px 12px 16px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.cc-search svg {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* ICONS */
+.cc-icons {
+  display: flex;
+  gap: 28px;
+}
+
+.cc-icon {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+.cc-icon svg {
+  font-size: 18px;
+  display: block;
+  margin: 0 auto 3px;
+}
+
+.cc-icon small {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #1fa9a2;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+/* ================= NAV ================= */
+.cc-nav {
+  border-top: 1px solid #eee;
+}
+
+.cc-nav .cc-container {
+  justify-content: center;
+  gap: 36px;
+  padding: 15px 24px;
+}
+
+.cc-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.cc-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #1fa9a2;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.cc-nav a:hover::after {
+  width: 100%;
+}
+
+/* ================= MEGA MENU ================= */
+.nav-item {
+  position: relative;
+}
+
+/* Mega menu box */
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  background: #fff;
+  display: none;
+  padding: 30px 40px;
+  gap: 60px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+/* Show on hover */
+.living-menu:hover .mega-menu {
+  display: flex;
+}
+
+/* Columns */
+.mega-col {
+  min-width: 220px;
+}
+
+.mega-col h4 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #222;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.mega-col h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background: #1fa9a2;
+}
+
+/* LINKS INSIDE MEGA MENU */
+.mega-col a {
+  display: block;
+  font-size: 14px;
+  margin: 8px 0;
+  color: #555;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mega-col a:hover {
+  color: #1fa9a2;
+  padding-left: 6px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .cc-main .cc-container {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .cc-search {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .cc-nav .cc-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .mega-menu {
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+.track-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:80px 20px;
+  background:#f4f7f8;
+  font-family:Poppins;
+}
+
+.track-card{
+  width:700px;
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.track-card h2{
+  margin-bottom:10px;
+}
+
+.track-card p{
+  color:#777;
+  margin-bottom:25px;
+}
+
+.track-input{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+}
+
+.track-input input{
+  padding:12px;
+  width:250px;
+  border:1px solid #ddd;
+  border-radius:5px;
+}
+
+.track-input button{
+  padding:12px 25px;
+  border:none;
+  background:#1fa9a2;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.order-status{
+  margin-top:40px;
+}
+
+.status-line{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.status{
+  text-align:center;
+}
+
+.status span{
+  width:35px;
+  height:35px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#ddd;
+  margin:auto;
+}
+
+.status.active span{
+  background:#1fa9a2;
+  color:white;
+}
+
+.status p{
+  margin-top:8px;
+  font-size:14px;
+}
